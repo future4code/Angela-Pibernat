@@ -44,11 +44,11 @@
 //     ${comidasPreferidas[3]}    
 //     ${comidasPreferidas[4]}`)
 // let comidaUsuario = prompt ("Qual a sua comida preferida?")
+// console.log (comidaUsuario)
 // comida3 = comidasPreferidas[2]
 // comida4 = comidasPreferidas[3]
 // comida5 = comidasPreferidas[4]
 // novasComidas = comidasPreferidas.splice(1,4)
-// console.log (comidasPreferidas)
 // comidasPreferidas.push(comidaUsuario)
 // comidasPreferidas.push(comida3)
 // comidasPreferidas.push(comida4)
