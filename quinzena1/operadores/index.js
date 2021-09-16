@@ -126,6 +126,17 @@
 // let xic = prompt("Digite um valor em xic para converter para Lt:")
 
 
+const nome = "Angela"
+const nomeAlterado = nome.toLowerCase()
+console.log (nomeAlterado)
+
+const frase = "Hoje assisti Chaves, adoro Chaves!"
+const novaFrase = frase.replaceAll("Chaves","Tarzan")
+console.log (novaFrase)
+
+const instrutoras = ["Amanda","Lais"]
+instrutoras.push("Chijo")
+console.log(instrutoras)
 
 
 
