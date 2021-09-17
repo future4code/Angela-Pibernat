@@ -135,15 +135,15 @@
 // recebeParametro(parametroDigitado)
 
 // b.
-const recebeParametro = (x) => {
-    console.log (x)
-}
+// const recebeParametro = (x) => {
+//     console.log (x)
+// }
 
-let num1 = Number(prompt("Digite o primeiro número"))
-let num2 = Number(prompt("Digite o segundo número"))
+// let num1 = Number(prompt("Digite o primeiro número"))
+// let num2 = Number(prompt("Digite o segundo número"))
 
-const recebeDoisValores = (valor1 , valor2) =>{
-const soma = valor1 + valor2
-return soma
-}
-recebeParametro(num1, num2)
+// const recebeDoisValores = (valor1 , valor2) =>{
+// const soma = valor1 + valor2
+// return soma
+// }
+// recebeParametro(num1, num2)
