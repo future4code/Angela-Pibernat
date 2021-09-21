@@ -58,17 +58,15 @@
 
 //EXERCICIO DE ESCRITA DE CÓDIGO 3
 
-// const listaDeTarefas = []
-// tarefa1 = prompt ("Digite sua primeira tarefa do dia")
-// tarefa2 = prompt ("Digite sua segunda tarefa do dia")
-// tarefa3 = prompt ("Digite sua terceira tarefa do dia")
-// listaDeTarefas.push(tarefa1)
-// listaDeTarefas.push(tarefa2)
-// listaDeTarefas.push(tarefa3)
-// console.log (listaDeTarefas)
-// tarefaRealizada = prompt("Digiite o indice de uma das tarefas já realizadas (1, 2 ou 3)")
-// listaDeTarefas.splice(tarefaRealizada-1,1)
-// console.log (listaDeTarefas)
+const listaDeTarefas = []
+tarefa1 = prompt ("Digite sua primeira tarefa do dia")
+tarefa2 = prompt ("Digite sua segunda tarefa do dia")
+tarefa3 = prompt ("Digite sua terceira tarefa do dia")
+listaDeTarefas.push(tarefa1, tarefa2, tarefa3)
+console.log (listaDeTarefas)
+tarefaRealizada = prompt("Digiite o indice de uma das tarefas já realizadas (1, 2 ou 3)")
+listaDeTarefas.splice(tarefaRealizada-1,1)
+console.log (listaDeTarefas)
 
 
 // DESAFIO 1
