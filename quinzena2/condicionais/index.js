@@ -112,7 +112,7 @@
 
 //*********************************************************************************************************
 
-//4.
+// 4.
 
 // let generoDoFilme = prompt("Qual o gênero do filme")
 // let preçoDoIngresso = Number(prompt("Qual o preço do ingresso?"))
@@ -142,87 +142,87 @@
 
 //2.
 
-let nomeCompleto = prompt("Digite seu nome completo")
-let tipoDeJogo = prompt("Digite o tipo de jogo: escolha IN para internacional e DO para doméstico")
-let etapaDoJogo = prompt("Escolha a etapa do jogo: SF para semi-final; DT para decisão de terceiro lugar; e FI para final")
-let categoria = Number(prompt("Escolha a categoria: 1, 2, 3 ou 4"))
-let qtdDeIngressos = Number(prompt("Digite quantos ingressos vc vai querer"))
-let nacionalOuInternacional = "nacional"
-const tabelaDePreços = [
-    1320, 880, 550, 220,
-    660, 440, 330, 170,
-    1980, 1320, 880, 330
-]
+// let nomeCompleto = prompt("Digite seu nome completo")
+// let tipoDeJogo = prompt("Digite o tipo de jogo: escolha IN para internacional e DO para doméstico")
+// let etapaDoJogo = prompt("Escolha a etapa do jogo: SF para semi-final; DT para decisão de terceiro lugar; e FI para final")
+// let categoria = Number(prompt("Escolha a categoria: 1, 2, 3 ou 4"))
+// let qtdDeIngressos = Number(prompt("Digite quantos ingressos vc vai querer"))
+// let nacionalOuInternacional = "nacional"
+// const tabelaDePreços = [
+//     1320, 880, 550, 220,
+//     660, 440, 330, 170,
+//     1980, 1320, 880, 330
+// ]
 
-if (etapaDoJogo === "SF" && categoria === 1){
-        valorDoIngresso = tabelaDePreços[0]
-        etapaDoJogo = "Semi Final" }
-if (etapaDoJogo === "SF" && categoria === 2){
-        valorDoIngresso = tabelaDePreços[1]
-        etapaDoJogo = "Semi Final" } 
-if (etapaDoJogo === "SF" && categoria === 3){
-        valorDoIngresso = tabelaDePreços[2]
-        etapaDoJogo = "Semi Final" }     
-if (etapaDoJogo === "SF" && categoria === 4){
-        valorDoIngresso = tabelaDePreços[3]
-        etapaDoJogo = "Semi Final" }
-if (etapaDoJogo === "DT" && categoria === 1){
-        valorDoIngresso = tabelaDePreços[4]
-        etapaDoJogo = "Decisão do 3º lugar" }
-if (etapaDoJogo === "DT" && categoria === 2){
-        valorDoIngresso = tabelaDePreços[5]
-        etapaDoJogo = "Decisão do 3º lugar" } 
-if (etapaDoJogo === "DT" && categoria === 3){
-        valorDoIngresso = tabelaDePreços[6]
-        etapaDoJogo = "Decisão do 3º lugar"}     
-if (etapaDoJogo === "DT" && categoria === 4){
-        valorDoIngresso = tabelaDePreços[7]
-        etapaDoJogo = "Decisão do 3º lugar" }
-if (etapaDoJogo === "FI" && categoria === 1){
-        valorDoIngresso = tabelaDePreços[8]
-        etapaDoJogo = "Final" }
-if (etapaDoJogo === "FI" && categoria === 2){
-        valorDoIngresso = tabelaDePreços[9]
-        etapaDoJogo = "Final" } 
-if (etapaDoJogo === "FI" && categoria === 3){
-        valorDoIngresso = tabelaDePreços[10]
-        etapaDoJogo = "Final"}     
- if (etapaDoJogo === "FI" && categoria === 4){
-        valorDoIngresso = tabelaDePreços[11]
-        etapaDoJogo = "Final" }
+// if (etapaDoJogo === "SF" && categoria === 1){
+//         valorDoIngresso = tabelaDePreços[0]
+//         etapaDoJogo = "Semi Final" }
+// if (etapaDoJogo === "SF" && categoria === 2){
+//         valorDoIngresso = tabelaDePreços[1]
+//         etapaDoJogo = "Semi Final" } 
+// if (etapaDoJogo === "SF" && categoria === 3){
+//         valorDoIngresso = tabelaDePreços[2]
+//         etapaDoJogo = "Semi Final" }     
+// if (etapaDoJogo === "SF" && categoria === 4){
+//         valorDoIngresso = tabelaDePreços[3]
+//         etapaDoJogo = "Semi Final" }
+// if (etapaDoJogo === "DT" && categoria === 1){
+//         valorDoIngresso = tabelaDePreços[4]
+//         etapaDoJogo = "Decisão do 3º lugar" }
+// if (etapaDoJogo === "DT" && categoria === 2){
+//         valorDoIngresso = tabelaDePreços[5]
+//         etapaDoJogo = "Decisão do 3º lugar" } 
+// if (etapaDoJogo === "DT" && categoria === 3){
+//         valorDoIngresso = tabelaDePreços[6]
+//         etapaDoJogo = "Decisão do 3º lugar"}     
+// if (etapaDoJogo === "DT" && categoria === 4){
+//         valorDoIngresso = tabelaDePreços[7]
+//         etapaDoJogo = "Decisão do 3º lugar" }
+// if (etapaDoJogo === "FI" && categoria === 1){
+//         valorDoIngresso = tabelaDePreços[8]
+//         etapaDoJogo = "Final" }
+// if (etapaDoJogo === "FI" && categoria === 2){
+//         valorDoIngresso = tabelaDePreços[9]
+//         etapaDoJogo = "Final" } 
+// if (etapaDoJogo === "FI" && categoria === 3){
+//         valorDoIngresso = tabelaDePreços[10]
+//         etapaDoJogo = "Final"}     
+//  if (etapaDoJogo === "FI" && categoria === 4){
+//         valorDoIngresso = tabelaDePreços[11]
+//         etapaDoJogo = "Final" }
 
-switch (tipoDeJogo){
-        case "IN":
-        valorDoIngresso = valorDoIngresso*0.2439
-        nacionalOuInternacional = "internacional"
-        break
-    }
+// switch (tipoDeJogo){
+//         case "IN":
+//         valorDoIngresso = valorDoIngresso*0.2439
+//         nacionalOuInternacional = "internacional"
+//         break
+//     }
 
-valorTotal = qtdDeIngressos * valorDoIngresso
+// valorTotal = qtdDeIngressos * valorDoIngresso
 
-ingressoNacional = 
-`Nome: ${nomeCompleto}\n
-Tipo de jogo: ${nacionalOuInternacional}\n
-Etapa do jogo: ${etapaDoJogo}\n
-Categoria: ${categoria}\n
-Quantidade de ingressos: ${qtdDeIngressos}\n
-Valor do ingresso: R$ ${valorDoIngresso}\n
-Valor total: R$ ${valorTotal}`
+// ingressoNacional = 
+// `Nome: ${nomeCompleto}\n
+// Tipo de jogo: ${nacionalOuInternacional}\n
+// Etapa do jogo: ${etapaDoJogo}\n
+// Categoria: ${categoria}\n
+// Quantidade de ingressos: ${qtdDeIngressos}\n
+// Valor do ingresso: R$ ${valorDoIngresso}\n
+// Valor total: R$ ${valorTotal}`
 
-ingressoInternacional = 
-`Nome: ${nomeCompleto}\n
-Tipo de jogo: ${nacionalOuInternacional}\n
-Etapa do jogo: ${etapaDoJogo}\n
-Categoria: ${categoria}\n
-Quantidade de ingressos: ${qtdDeIngressos}\n
-Valor do ingresso: U$ ${valorDoIngresso}\n
-Valor total: U$ ${valorTotal}`
+// ingressoInternacional = 
+// `Nome: ${nomeCompleto}\n
+// Tipo de jogo: ${nacionalOuInternacional}\n
+// Etapa do jogo: ${etapaDoJogo}\n
+// Categoria: ${categoria}\n
+// Quantidade de ingressos: ${qtdDeIngressos}\n
+// Valor do ingresso: U$ ${valorDoIngresso}\n
+// Valor total: U$ ${valorTotal}`
 
-if (tipoDeJogo === "DO"){
-    console.log (ingressoNacional)
-}else{
-    console.log (ingressoInternacional)
-}
+// if (tipoDeJogo === "DO"){
+//     console.log (ingressoNacional)
+// }else{
+//     console.log (ingressoInternacional)
+// }
 
 
 
