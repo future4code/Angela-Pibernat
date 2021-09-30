@@ -43,16 +43,16 @@
 
 // EXERCÍCIOS DE ESCRITA DE CÓDIGO
 
-// const pets = [
-//     { nome: "Lupin", raca: "Salsicha"},
-//     { nome: "Polly", raca: "Lhasa Apso"},
-//     { nome: "Madame", raca: "Poodle"},
-//     { nome: "Quentinho", raca: "Salsicha"},
-//     { nome: "Fluffy", raca: "Poodle"},
-//     { nome: "Caramelo", raca: "Vira-lata"},
-//  ]
+const pets = [
+    { nome: "Lupin", raca: "Salsicha"},
+    { nome: "Polly", raca: "Lhasa Apso"},
+    { nome: "Madame", raca: "Poodle"},
+    { nome: "Quentinho", raca: "Salsicha"},
+    { nome: "Fluffy", raca: "Poodle"},
+    { nome: "Caramelo", raca: "Vira-lata"},
+ ]
 
-//  // a) Crie um novo array que contenha apenas o nome dos doguinhos
+ // a) Crie um novo array que contenha apenas o nome dos doguinhos
 
 //  const novoArrayNomes = pets.map((item, index, array) => {
 //     return item.nome
@@ -71,12 +71,15 @@
 // // c) Crie um novo array que possuirá mensagens para enviar para todos os clientes que são poodles.\n 
 // // A mensagem deve ser: "Você ganhou um cupom de desconto de 10% para tosar o/a [NOME]!"
 
-// const novoArrayDesconto = pets.filter((item, index, array) => {
-//     if (item.raca === "Poodle"){
-//         nomeDoPet = item.nome
-//         console.log ("Você ganhou um cupom de desconto de 10% para tosar o/a " + nomeDoPet)
-//     }
+// const mensagensPoodles = pets.filter((item) => {
+//     return item.raca === "Poodle"
 // })
+// const nomesPoodles = mensagensPoodles.map((item) => {
+//     nome = item.nome
+//     return ("Você ganhou um cupom de desconto de 10% para tosar o/a " + nome + " !")
+// })
+// console.log(nomesPoodles)
+
 
 //*******************************************************************************************************
 
