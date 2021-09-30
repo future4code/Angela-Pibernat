@@ -43,14 +43,14 @@
 
 // EXERCÍCIOS DE ESCRITA DE CÓDIGO
 
-const pets = [
-    { nome: "Lupin", raca: "Salsicha"},
-    { nome: "Polly", raca: "Lhasa Apso"},
-    { nome: "Madame", raca: "Poodle"},
-    { nome: "Quentinho", raca: "Salsicha"},
-    { nome: "Fluffy", raca: "Poodle"},
-    { nome: "Caramelo", raca: "Vira-lata"},
- ]
+// const pets = [
+//     { nome: "Lupin", raca: "Salsicha"},
+//     { nome: "Polly", raca: "Lhasa Apso"},
+//     { nome: "Madame", raca: "Poodle"},
+//     { nome: "Quentinho", raca: "Salsicha"},
+//     { nome: "Fluffy", raca: "Poodle"},
+//     { nome: "Caramelo", raca: "Vira-lata"},
+//  ]
 
  // a) Crie um novo array que contenha apenas o nome dos doguinhos
 
@@ -84,18 +84,18 @@ const pets = [
 //*******************************************************************************************************
 
 2.
-// const produtos = [
-//     { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5 },
-//     { nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8 },
-//     { nome: "Veja Multiuso", categoria: "Limpeza", preco: 12.6 },
-//     { nome: "Dúzia de Banana", categoria: "Hortifruti", preco: 5.7 },
-//     { nome: "Leite", categoria: "Bebidas", preco: 2.99 },
-//     { nome: "Cândida", categoria: "Limpeza", preco: 3.30 },
-//     { nome: "Detergente Ypê", categoria: "Limpeza", preco: 2.2 },
-//     { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
-//     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
-//     { nome: "Sabão em Pó Ypê", categoria: "Limpeza", preco: 10.80 }
-//  ]
+const produtos = [
+    { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5 },
+    { nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8 },
+    { nome: "Veja Multiuso", categoria: "Limpeza", preco: 12.6 },
+    { nome: "Dúzia de Banana", categoria: "Hortifruti", preco: 5.7 },
+    { nome: "Leite", categoria: "Bebidas", preco: 2.99 },
+    { nome: "Cândida", categoria: "Limpeza", preco: 3.30 },
+    { nome: "Detergente Ypê", categoria: "Limpeza", preco: 2.2 },
+    { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
+    { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
+    { nome: "Sabão em Pó Ypê", categoria: "Limpeza", preco: 10.80 }
+ ]
                                   
 
  // a) Crie um novo array que contenha apenas o nome de cada item
@@ -135,14 +135,13 @@ const pets = [
 // e) Crie um novo array onde cada item é uma frase "Compre [NOME] por [PREÇO]". 
 // Esse array deve conter frases apenas dos itens cujo nome contenha a palavra "Ypê"
 
-// const arrayYpe = produtos.filter((item) => {
-//     return  item.nome.includes("Ypê") === true
-// })
+const arrayYpe = produtos.filter((item) => {
+    return  item.nome.includes("Ypê") === true
+})
 
-// for (let i=0 ; i <= arrayYpe.length ; i++){
-//     nomes = arrayYpe[i].nome
-//     preco = arrayYpe[i].preco 
-//     console.log (["Compre "+ nomes + " por " + preco])
-//  }
-
- 
+const frasesYpe = arrayYpe.map((item) => {
+    nome = item.nome
+    preco = item.preco
+    return ("Compre " + nome + "por " + preco +"!")
+})
+console.log(frasesYpe)
