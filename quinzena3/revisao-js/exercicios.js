@@ -1,20 +1,29 @@
 // EXERCÍCIO 01
 
  
-function inverteArray(array) {
-  let arrayInvertida = []
-   for (let i = array.length-1 ; i >= 0; i--){
+// function inverteArray(array) {
+//   let arrayInvertida = []
+//    for (let i = array.length-1 ; i >= 0; i--){
     
-    arrayInvertida.push(array[i])
-   }
-   console.log (arrayInvertida)
-   return arrayInvertida
-}
+//     arrayInvertida.push(array[i])
+//    }
+//    console.log (arrayInvertida)
+//    return arrayInvertida
+// }
  
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
 
+let arrayNumerosPares = []
+
+for(let i=0 ; i < array.length ; i++){
+  if (array[i]%2 === 0){
+    arrayNumerosPares.push(array[i]**2)
+   } 
+}
+console.log (arrayNumerosPares)
+return arrayNumerosPares
 }
 
 // EXERCÍCIO 03
