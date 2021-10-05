@@ -13,22 +13,31 @@
  
 
 // EXERCÍCIO 02
-function retornaNumerosParesElevadosADois(array) {
+// function retornaNumerosParesElevadosADois(array) {
+
+// let arrayNumerosPares = []
+
+// for(let i=0 ; i < array.length ; i++){
+//   if (array[i]%2 === 0){
+//     arrayNumerosPares.push(array[i]**2)
+//    } 
+// }
+// console.log (arrayNumerosPares)
+// return arrayNumerosPares
+// }
+
+// EXERCÍCIO 03
+function retornaNumerosPares(array) {
 
 let arrayNumerosPares = []
 
 for(let i=0 ; i < array.length ; i++){
   if (array[i]%2 === 0){
-    arrayNumerosPares.push(array[i]**2)
+    arrayNumerosPares.push(array[i])
    } 
 }
 console.log (arrayNumerosPares)
 return arrayNumerosPares
-}
-
-// EXERCÍCIO 03
-function retornaNumerosPares(array) {
-
 }
 
 // EXERCÍCIO 04
