@@ -208,13 +208,24 @@ return novaPessoa
 }
 
 // EXERCÍCIO 16A
-function maioresDe18(arrayDePessoas) {
 
+function maioresDe18(arrayDePessoas) {
+  const selecionarMaiores = (item) => {
+  return item.idade >= 18
+}
+const maioresDe18impressao = arrayDePessoas.filter(selecionarMaiores)
+console.log (maioresDe18impressao)
+return maioresDe18impressao
 }
 
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
-
+  const selecionarMaiores = (item) => {
+    return item.idade < 18
+  }
+  const maioresDe18impressao = arrayDePessoas.filter(selecionarMaiores)
+  console.log (maioresDe18impressao)
+  return maioresDe18impressao
 }
 
 // EXERCÍCIO 17A
