@@ -127,68 +127,48 @@ Z=Math.abs(num2-num1)
 
 // EXERCÍCIO 10
 
-//let array = [1,2,3,4,5,6,7]
-//let arra = []
-
 function segundoMaiorEMenor(array) {
 
-  // arrayNova = []
-  // let segundoMaior
-  // let segundoMenor 
-
-  // for (let i=0 ; i<array.length ; i++){
-
-  //     if (array[i]<array[i+1] ){
-  //     segundoMaior = array[i]
-      
-  //     }
-      
-  //   }    
-  // for (let i = array.length ; i>0 ; i--){  
-  //   if (array[i]>array[i-1]){
-  //     segundoMenor = array[i]
-  //   }
-  //   }
-  //   arrayNova.push(segundoMaior) 
-  //   arrayNova.push(segundoMenor)
-  //   return arrayNova
+    for (let j = array.length-1 ; j > 0 ; j--){ 
+      for (let i = 0 ; i < j ; i++){     
+        if (array[i] > array[i+1]){
+          [array[i], array[i+1]] = [array[i+1], array[i]] 
+        }
+      }
+    }
+    let segundoMaior = array[array.length-2]
+    let segundoMenor = array[1]
+    return [segundoMaior , segundoMenor]
   }
-  
-
-
-
-
+ 
 
 // EXERCÍCIO 11
 
 function ordenaArray(array) {
 
-  // let novoArray = []
-
-  // for (item of array){
-  //   let contador = 0
-  //   for (itemComparado of array){
-  //     if(item > itemComparado){
-  //       contador ++
-  //     }
-  //   }
-  //   novoArray[contador]=item
-  // }
-  // return novoArray
+  for (let j = array.length-1 ; j > 0 ; j--){ //indice 1
+    for (let i = 0 ; i < j ; i++){     // 36
+      if (array[i] > array[i+1]){
+        [array[i], array[i+1]] = [array[i+1], array[i]] // [12, 36, 7, 56, 3]
+      }
+    }
+  }
+  console.log (array)
+  return array
 }
   
 
 // EXERCÍCIO 12
 
 function filmeFavorito() {
-//     const objeto = {
-//     nome: "O Diabo Veste Prada",
-//     ano:2006,
-//     diretor: "David Frankel",
-//     atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
-//    }
-// console.log (filmeFavorito())   
-// return objeto
+    const objeto = {
+    nome: "O Diabo Veste Prada",
+    ano:2006,
+    diretor: "David Frankel",
+    atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+   }
+ 
+return objeto
 }
 
 
