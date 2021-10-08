@@ -229,13 +229,27 @@ function menoresDe18(arrayDePessoas) {
 }
 
 // EXERCÍCIO 17A
-function multiplicaArrayPor2(array) {
 
+const array = [1, 2, 3, 4, 5, 6]
+
+function multiplicaArrayPor2(array) {
+  const multiplica = (item) => {
+    return item*2
+  }
+  const duplicados = array.map(multiplica)
+  console.log (duplicados)
+  return duplicados
 }
 
 // EXERCÍCIO 17B
-function multiplicaArrayPor2S(array) {
 
+function multiplicaArrayPor2S(array) {
+  const multiplica = (item) => {
+    return (item*2).toString()
+  }
+  const duplicados = array.map(multiplica)
+  console.log (duplicados)
+  return duplicados
 }
 
 // EXERCÍCIO 17C
