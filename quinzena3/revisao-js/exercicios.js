@@ -187,14 +187,14 @@ function imprimeChamada() {
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
 
-const objeto = {
-largura: lado1,
-altura: lado2,
-perimetro: 2 * (lado1 + lado2),
-area: lado1 * lado2}
-return objeto
+// const objeto = {
+// largura: lado1,
+// altura: lado2,
+// perimetro: 2 * (lado1 + lado2),
+// area: lado1 * lado2}
+// return objeto
 }
-console.log (objeto)
+//console.log (objeto)
 
 
 // EXERCÍCIO 15
@@ -254,27 +254,69 @@ function multiplicaArrayPor2S(array) {
 
 // EXERCÍCIO 17C
 function verificaParidade(array) {
-
+  
+  for (i=0 ; i<array.length ; i++){
+    if (array[i]%2===0){
+      array[i] = array[i].toString() + " é par"
+    }else{ 
+      array[i] = array[i].toString() + " é ímpar"
+    }
+  }
+  console.log (array)
+  return array
 }
-
+  
+ 
 // EXERCÍCIO 18A
+
 function retornaPessoasAutorizadas(pessoas) {
 
-}
+  const filtraPessoas = (pessoas) => {
+    
+    return (pessoas.idade>14 && pessoas.idade<60 && pessoas.altura>1.5)
+    
+  }
+  const pessoasAutorizadas = pessoas.filter(filtraPessoas)
+  return pessoasAutorizadas
+ }
+
 
 // EXERCÍCIO 18B
 function retornaPessoasNaoAutorizadas(pessoas) {
 
+  const filtraPessoas = (pessoas) => {
+    
+    return (pessoas.idade<=14 || pessoas.idade>=60 || pessoas.altura<=1.5)
+    
+  }
+  const pessoasNaoAutorizadas = pessoas.filter(filtraPessoas)
+  return pessoasNaoAutorizadas
 }
 
 // EXERCÍCIO 19A
+
 function ordenaPorNome(consultasNome) {
 
+  consultasNome.sort(function(x, y) {
+  let a = x.nome.toUpperCase()
+  let b = y.nome.toUpperCase()
+  return a == b ? 0 : a > b ? 1 : -1   
+})
+console.log(consultasNome)
+return consultasNome
 }
+
 
 // EXERCÍCIO 19B
 function ordenaPorData(consultasData) {
 
+  consultasData.sort(function(x, y){
+    let a = new Date(x.dataDaConsulta)
+    let b = new Date(y.dataDaConsulta)
+    return a - b
+  })
+  console.log (consultasData)
+  return consultasData
 }
 
 // EXERCÍCIO 20
