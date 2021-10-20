@@ -86,6 +86,7 @@ div img {
     background-color: #e7eb90;
     
     
+    
 }
 
 #container-para-comprar>p {
@@ -109,6 +110,10 @@ div:last-child {
 
 table {
     width: 60%;
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 td button {
@@ -117,11 +122,13 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+    font-weight: bold;
 }
 
 .container-do-search {
     margin-top: 20px;
     height: 100px;
+    font-family:sans-serif;
 }
 
 
