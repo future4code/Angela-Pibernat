@@ -157,7 +157,11 @@ td button:active{
 .container-do-search {
     margin-top: 20px;
     height: 100px;
-    font-family:sans-serif;
+    /* font-family:sans-serif; */
+}
+
+.container{
+    font-family:sans-serif;  
 }
 
 .icone{ 
