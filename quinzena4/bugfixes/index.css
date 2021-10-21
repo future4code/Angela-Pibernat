@@ -108,12 +108,22 @@ div:last-child {
     text-align: center;
 }
 
+.class-align{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
 table {
     width: 60%;
     font-family:sans-serif;
     font-weight: bold;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
 
 td button {
@@ -129,6 +139,18 @@ td button {
     margin-top: 20px;
     height: 100px;
     font-family:sans-serif;
+ }
+
+.icone{ 
+    /* background-image: src="img/teste.png"; 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 30px;           /* make this the size of your image */
+    padding-left: 16px;     /* make text start to the right of the image */
+    vertical-align: middle; /*align the text vertically centered*/
 }
 
 
@@ -141,9 +163,14 @@ td button {
     font-size: 10px;
     color: black;
     
+    
 }
 
 #back-button:hover {
     background-color: #635a3d
+}
+
+.imagem {
+    max-width: 3em;
 }
 
