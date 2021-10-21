@@ -108,6 +108,15 @@ div:last-child {
     text-align: center;
 }
 
+input{
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+    
+    
+    
+
 .class-align{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -121,9 +130,7 @@ table {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    /* display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    
 }
 
 td button {
@@ -135,11 +142,21 @@ td button {
     font-weight: bold;
 }
 
+td button:hover{
+    background-color: red;
+    color:white;
+}
+
+td button:active{
+    background-color: white;
+    color: red;
+}
+
 .container-do-search {
     margin-top: 20px;
     height: 100px;
     font-family:sans-serif;
- }
+}
 
 .icone{ 
     /* background-image: src="img/teste.png"; 16px x 16px */
