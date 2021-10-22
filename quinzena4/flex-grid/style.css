@@ -44,12 +44,19 @@ section{
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
+    
 }
 
 section>div{
     padding: 10px;
     margin: 5px;
+    
 }
+
+.sombra		{background: url(img/sombra.png) no-repeat;
+    width: 1fr;
+    height: 1fr;}
+
 
 footer{
     display: grid;
