@@ -4,28 +4,28 @@
 }
 
 body{
-    background-image: white;
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+    height: 100%;
+    width: 100%;
 }
 
 .menu{
     list-style: none;
 }
 
-a{
-    text-decoration: none;
+.menu li a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(139, 27, 27);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-section{
-    width: 100%;
-    height: 95vh;
-    background-image: url(img/fundo5.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat;
-    position: relative;
-    
+a{
+    text-decoration: none;
+    font-weight: 700;
 }
+
 
 /* Estilo Navegador*/
 
@@ -33,10 +33,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    height: 70px;
+    background-color: white;
+    box-shadow: 2px 2px 12px rgba(0,0,0,10);
     padding: 0px 5%;
+    flex-wrap: wrap;
+      
 }
 
 nav ul{
@@ -44,26 +46,176 @@ nav ul{
 }
 
 nav ul li a{
-    margin: 20px;
-    font-family: myriad pro regular;
-    color: #505050;
+    margin: 10px;
+    font-family: calibre;
     font-size: 15px;
     font-weight: 700;
+    color: white;
+}
+
+#piscando{
+    font-family: Cambria;
+    color: rgb(139, 27, 27);
+    font-size: 30px; 
 }
 
 .logo{
     font-family: Cambria;
-    color: rgb(27, 27, 172);
+    color: rgb(139, 27, 27);
     font-size: 30px; 
 }
 
-.active{
-    font-weight: bold;
-    color: rgb(27, 27, 172);
-}
 
 /* Estilo dos textos*/
 
-.conteudo-texto{
+.section-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    /* background-image: url(img/fundo4.jpg) ; */
+    background-image: linear-gradient(to right, white, rgb(139, 27, 27));
+    background-size: cover;
+    background-repeat: no-repeat;
     
+}
+
+.nome{
+    
+    /* margin: 45px 0px 25px;
+    /* position: absolute; */
+    /* left: 13%;
+    top: 42%; */ */
+    /* transform: translate(-13%, -42%); */
+}
+
+.nome p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: black;
+    font-size: 60px;
+}
+
+.nome p:nth-child(2){
+    font-family: arial;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 30px;
+}
+
+.nome p:nth-child(3){
+    font-family: arial;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 30px;
+}
+
+.nome p:nth-child(4){
+    font-family: arial;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 30px;
+}
+
+button{
+    
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+
+.button1{
+    border: 2px solid rgb(139, 27, 27);
+    color: rgb(139, 27, 27);
+}
+
+.button2{
+    background-color: rgb(139, 27, 27);
+    border: none;
+    color: white;
+}
+
+button:active{
+ transform: scale(1.1)
+}
+
+.perfil{
+    /* width:200px;
+	height:100px; */
+	background-color:#666;
+	border-radius: 15px;
+}
+
+footer{
+    background-color: rgb(139, 27, 27);    
+    max-height: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+marquee{
+    display: inline-block;
+    width: -webkit-fill-available;
+}
+
+.rodape{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    text-align: center;
+    animation-name:initial;
+    animation: rotate 1s linear infinite;
+}
+
+.redes{
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+.historico1{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    background-color: rgb(180, 179, 179);
+	border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    text-align: justify;
+    margin: 20px;
+    padding: 10px;
+}
+
+.titulo-menu{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px; 
+    text-align: center;
+}
+
+.contato{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    text-align: center; 
+    font-size: 30px;
+    margin-top: 50px; 
+}
+
+.contato-block{
+    border-radius: 15px;
+    background-color: rgb(180, 179, 179);
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
