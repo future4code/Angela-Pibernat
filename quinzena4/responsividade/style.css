@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+.body-index{
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+}
+
+.body-film{
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+
+}
+
+
+/* Estilo Navegador*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(236, 236, 167);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 10);
+    padding: 0px 5%;
+    flex-wrap: wrap;
+      
+}
+
+#piscando{
+    font-family: Cambria;
+    color: blue;
+    font-size: 30px; 
+}
+
+
+/* Estilo dos textos*/
+
+
+.section-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+    row-gap: 30px;
+}
+
+.img-card{
+    max-width: 250px;
+    height: 150px;      
+}
+
+.video-card{
+    max-width: 100%;
+    height: 470px; 
+    margin-top: 0;
+    padding-left: 250px;
+} 
+
+
+footer{
+    display: grid;
+    background-color: rgb(236, 236, 167);
+    max-height: 70px;
+    position: end;
+    align-items: end;
+    justify-items: center;
+    
+}
+
+.rodape{
+    font-family: Cambria;
+    color: blue;
+    font-size: 50px;
+}
+
+#nome{    
+    width: 400px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+
+#nome:active{
+ transform: scale(1.1)
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* celulares */
+    
+
+.body-index{
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(236, 236, 167);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 10);
+    padding: 0px 5%;
+    flex-wrap: wrap;
+      
+}
+
+.section-home{
+    display: grid;
+    grid-template-columns: 1fr; 
+    margin-top: -320px; 
+}
+
+.rodape{
+    font-family: Cambria;
+    color: red;
+    font-size: 70%;
+    position: end;
+}
+
+.search{
+    font-size: 70%;
+}
+
+#nome{    
+    width: 70%;
+    height: 70%;
+}
+
+#piscando{
+    font-family: Cambria;
+    color: red;
+    font-size: 70%; 
+}
+
+.filmes{
+    text-align: center;
+}
+
+}
