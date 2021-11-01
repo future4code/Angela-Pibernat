@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>FILME1</title>
+</head>
+<body class="body-film">
+    <header>
+        <nav>
+            <b id='piscando' style="transition-duration:0.20s">
+
+                <h1>MYTUBE</h1>
+                    
+            </b><script>
+                var teste = 0;
+                    setInterval(piscar, 500);
+                    function piscar(){
+                    if(teste<1){
+                        teste++;
+                        document.getElementById('piscando').style.opacity = '1';
+                    } else{
+                        teste = 0; 
+                        document.getElementById('piscando').style.opacity = '0';
+                    }};
+                </script>
+            
+            <div>
+                <a href="index.html"><button href="index.html" id="back-button" > VOLTAR </button>                               
+            </div>
+        </nav>
+    </header>
+    <section>                 
+        <video src="https://storage.googleapis.com/future-apis.appspot.com/1.mp4" class="video-card" controls autoplay></video> 
+    </section>
+    <footer>
+        <div> 
+            <marquee class="rodape">
+                OS MELHORES FILMES VOCÊ ENCONTRA AQUI!
+            </marquee>
+        </div>
+    </footer>
+</body>
+               
+        
