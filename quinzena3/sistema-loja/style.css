@@ -1,0 +1,77 @@
+html,
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+.fundo {
+  width: 100%;
+  height: 100%;
+  animation: transition 5s infinite;
+}
+@keyframes transition {
+  from {
+    background-color: #8394c9;
+  }
+  to {
+    background-color: #fe9c12;
+  }
+}
+
+#cabecalho1{
+    background-color:white;
+ }
+ .cabecalho2{
+    background-color:lawngreen;
+ }
+.borda{
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgb(36, 33, 33);
+    
+    /* border: 1px dotted black; */
+}
+
+.navegar {
+    background-color:yellow;
+}
+
+html {
+    height: 100%;
+    min-height: 100%; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer {
+    margin-top:auto;
+    text-align:right;
+    padding: 1px;
+    background-color:mediumblue;
+    color: white;
+}
+
+.texto-movel {
+    color: white
+  }
+
+  td {
+      background-color: rgb(172, 169, 169);
+  }
+
+.form-add {
+    padding: 20px;
+    background-color:yellow;
+}
+.buton{
+    background-color: rgb(206, 72, 99);
+    margin: 10px;
+}
+  
+  
+  
+
